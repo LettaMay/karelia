@@ -1,11 +1,13 @@
 body {
   font-family: Montserrat, sans-serif;
   background-image: url("/src/img/photo/imgBackground.png");
+  max-height: 1000px;
   background-position: top;
   background-repeat: no-repeat;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
+  color: #ffffff;
 }
 
 img {
@@ -17,7 +19,7 @@ ul {
 }
 
 .container {
-  width: 1170px;
+  width: 1620px;
   margin: auto;
 }
 
@@ -35,7 +37,9 @@ ul {
 }
 
 .navbar {
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .navbar-block {
@@ -101,5 +105,100 @@ ul {
   padding-left: 10px;
   font-style: normal;
   color: #ffffff;
+}
+
+.hero-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero-text {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  padding-top: 167px;
+}
+
+.hero-text__title {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 86px;
+  margin-bottom: 45px;
+  margin-top: 0;
+}
+
+.hero-text__subtitle {
+  display: block;
+  margin-bottom: 60px;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 23px;
+}
+
+.hero-text__btn {
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 500;
+  padding: 25px 81px;
+  background-color: #FF7474;
+  border: none;
+}
+
+.hero__scrolldown {
+  margin-top: 96px;
+  margin-bottom: 179px;
+}
+
+.hero-video {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.hero__video1 {
+  background-image: url("/src/img/imgVideo1.png");
+  width: 440px;
+  height: 271px;
+  margin-bottom: 25px;
+}
+
+.hero__video2 {
+  background-image: url("/src/img/imgVideo2.png");
+  width: 440px;
+  height: 271px;
+}
+
+.hero-play {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 192px;
+  padding-left: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hero-play__text {
+  padding-left: 15px;
+}
+
+.hero-play__title {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.hero-play__subtitle {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
 }
 /*# sourceMappingURL=style.css.map */
