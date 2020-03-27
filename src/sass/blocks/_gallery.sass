@@ -1,0 +1,63 @@
+.gallery
+    background-color: $fon-color
+    background-size: contain
+    background-position: top right
+    position: relative
+    max-height: 600px
+    &:before
+        content: ''
+        width: 50%
+        height: 100%
+        position: absolute
+        background-color: #fff
+        top: 0
+        left: 0
+    &-block
+        position: relative
+        display: flex
+        // border: 1px solid blue
+        // margin-top: 72px
+    &-column    
+        // border: 1px solid $top-color
+        margin-top: 210px
+        &:first-child
+            margin-top: 150px
+            margin-right: 32px
+        &:last-child
+            margin-top: 72px
+            margin-left: 32px 
+            min-width: 32%   
+            // border: 1px solid blue        
+    &-text
+        margin-left: 60px
+        // border: 1px solid $top-color
+        &__title
+            margin: 0
+        &__subtitle
+            line-height: 40px
+            letter-spacing: 0.01em
+        
+    &__image
+        padding-bottom: 36px
+    
+    .instagram
+        display: flex
+        align-items: center
+        margin-bottom: 20px
+        margin-right: 60px
+        &__text
+            margin-left: 15px
+            font-size: 16px
+            line-height: 21px
+            color: #BAB9B9
+            letter-spacing: 0.01em
+            &:after
+                content: ' Instagram'
+                color: $top-color
+
+                
+     
+                    
+            
+      
+            

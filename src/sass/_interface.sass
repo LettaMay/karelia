@@ -1,19 +1,38 @@
 body
     font-family: Montserrat, sans-serif
+    font-size: 19px
+    font-weight: 500
     background-image: url('/src/img/photo/imgBackground.png')
     max-height: 1000px
     background-position: top
     background-repeat: no-repeat
     box-sizing: border-box
     margin: 0
-    color: $main-color
+    color: $main-color 
 img
     max-width: 100%
 ul
     padding: 0
 .container
-    width: 1620px
+    width: 1344px
     margin: auto
+
+.btn
+    color: $hero-color
+    font-weight: 500
+    padding: 25px 81px
+    background-color: $top-color
+    border: none
+
+.title
+    font-family: Playfair Display
+    font-weight: bold
+    font-size: 50px
+    line-height: 86px
+    &:after
+        content: '.'
+        color: $top-color   
+
 @media (max-width: 1200px)
     .container
         width: 760px

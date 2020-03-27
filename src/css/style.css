@@ -1,5 +1,7 @@
 body {
   font-family: Montserrat, sans-serif;
+  font-size: 19px;
+  font-weight: 500;
   background-image: url("/src/img/photo/imgBackground.png");
   max-height: 1000px;
   background-position: top;
@@ -7,7 +9,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
-  color: #ffffff;
+  color: #333333;
 }
 
 img {
@@ -19,8 +21,28 @@ ul {
 }
 
 .container {
-  width: 1620px;
+  width: 1344px;
   margin: auto;
+}
+
+.btn {
+  color: #ffffff;
+  font-weight: 500;
+  padding: 25px 81px;
+  background-color: #FF7474;
+  border: none;
+}
+
+.title {
+  font-family: Playfair Display;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 86px;
+}
+
+.title:after {
+  content: '.';
+  color: #FF7474;
 }
 
 @media (max-width: 1200px) {
@@ -40,6 +62,7 @@ ul {
   padding-top: 50px;
   padding-left: 0;
   padding-right: 0;
+  color: #ffffff;
 }
 
 .navbar-block {
@@ -82,7 +105,6 @@ ul {
   display: flex;
   text-decoration: none;
   padding: 0 20px;
-  font-weight: 500;
   color: #ffffff;
 }
 
@@ -107,6 +129,10 @@ ul {
   color: #ffffff;
 }
 
+.hero {
+  color: #ffffff;
+}
+
 .hero-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,8 +143,8 @@ ul {
 }
 
 .hero-text {
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   padding-top: 167px;
 }
 
@@ -132,21 +158,15 @@ ul {
   margin-top: 0;
 }
 
+.hero-text__title:after {
+  content: '.';
+  color: #FF7474;
+}
+
 .hero-text__subtitle {
   display: block;
   margin-bottom: 60px;
-  font-weight: 500;
-  font-size: 19px;
   line-height: 23px;
-}
-
-.hero-text__btn {
-  color: #ffffff;
-  font-size: 19px;
-  font-weight: 500;
-  padding: 25px 81px;
-  background-color: #FF7474;
-  border: none;
 }
 
 .hero__scrolldown {
@@ -191,7 +211,6 @@ ul {
 }
 
 .hero-play__title {
-  font-weight: 500;
   font-size: 22px;
   line-height: 27px;
 }
@@ -200,5 +219,156 @@ ul {
   font-weight: normal;
   font-size: 15px;
   line-height: 18px;
+}
+
+.plus {
+  background-image: url("/src/img/photo/imgMountains.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.plus-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 150px;
+}
+
+.plus-text {
+  max-width: 76%;
+}
+
+.plus-text__title {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.plus-text__subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 40px;
+  margin-bottom: 100px;
+}
+
+.plus-text__item:first-child {
+  margin-right: 40px;
+}
+
+.plus-point {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.plus-point__paragraph {
+  margin-right: 40px;
+  min-width: 212px;
+}
+
+.plus-point__number {
+  font-family: serif;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 40px;
+  letter-spacing: 0.01em;
+  color: #FF7474;
+  margin-bottom: 20px;
+}
+
+.plus-point__text {
+  line-height: 32px;
+  letter-spacing: 0.01em;
+  margin-bottom: 108px;
+}
+
+.gallery {
+  background-color: #F3F3F3;
+  background-size: contain;
+  background-position: top right;
+  position: relative;
+  max-height: 600px;
+}
+
+.gallery:before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+}
+
+.gallery-block {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gallery-column {
+  margin-top: 210px;
+}
+
+.gallery-column:first-child {
+  margin-top: 150px;
+  margin-right: 32px;
+}
+
+.gallery-column:last-child {
+  margin-top: 72px;
+  margin-left: 32px;
+  min-width: 32%;
+}
+
+.gallery-text {
+  margin-left: 60px;
+}
+
+.gallery-text__title {
+  margin: 0;
+}
+
+.gallery-text__subtitle {
+  line-height: 40px;
+  letter-spacing: 0.01em;
+}
+
+.gallery__image {
+  padding-bottom: 36px;
+}
+
+.gallery .instagram {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  margin-right: 60px;
+}
+
+.gallery .instagram__text {
+  margin-left: 15px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #BAB9B9;
+  letter-spacing: 0.01em;
+}
+
+.gallery .instagram__text:after {
+  content: ' Instagram';
+  color: #FF7474;
 }
 /*# sourceMappingURL=style.css.map */
